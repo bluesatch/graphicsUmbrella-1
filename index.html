@@ -87,6 +87,7 @@ text: Open sans
         <section class="container-fluid top-header">
             <div class="row d-none d-md-flex fixed-top">
                 <div class="col-8"></div>
+                <!-- I've seen this strategy used before. While it works, you can also try a float:right-->
                 <div class="col-2 d-md-block">
                     <p class="d-flex justify-content-end" id="pull">pull me</p>
                 </div>    
@@ -101,7 +102,9 @@ text: Open sans
             <div class="row justify-content-center justify-content-md-start">
              -->    
                 <!--try using a nested column and row to keep the logo and the header together on all screen sizes
-                    make duplicate elements that display according to viewport-->
+                    make duplicate elements that display according to viewport--> 
+            
+                <!-- instead use .container instead of .container-fluid-->
                             
                                 <div class="row outer-header-row">
                                   <div class="col">
@@ -122,6 +125,7 @@ text: Open sans
                                                 <p class="header-text" id="free">free graphics</p>
                                             </div>
                                         </div><!--end of inner column-->
+                                        <!-- use the .nav class on nav and .nav-link class on a-->
                                         <nav class="navbar top-nav col-md-6 col-lg-6 d-flex d-inline justify-content-center justify-content-md-end align-items-center">
                                             <a href="#link" class="top-nav-link">home</a>
                                             <a href="#link" class="top-nav-link">news</a>
@@ -183,6 +187,7 @@ text: Open sans
         4 round icons with links and text for each-->
             <div class="row" id="elegantica-row">
                 <div class="col subheader-column d-flex d-inline offset-md-1">
+                    <!--use one h1 tag and wrap the green text inside a span tag -->
                     <h1 class="subheader-text">welcome to&nbsp</h1><h1 class="subheader-text subheader-text-elegantica" id="elegantica">elegantica</h1><h1 class="subheader-text">&nbsp - a minimal business theme</h1>
                 </div>
                 <div class="col-10 offset-1 dashed-line"></div>
@@ -358,6 +363,7 @@ text: Open sans
                     <h2 class="subheader-text section-3-subheader">our major &nbsp</h2><h2 class="subheader-text section-3-subheader subheader-text-advertisers" id="advertisers">advertisers</h2>
                 </div>
             </div>
+            <!-- you don't need to add d-flex to a row. It has those properties built in-->
             <div class="row d-flex">
                 <div class="col-sm-4 text-center">
                     <img class="img-fluid advertiser-image" src="css/images/watermelocious.jpg" alt="@aterMelocious">
@@ -462,6 +468,7 @@ text: Open sans
                                 <a href="mailto:email@venedor.co" class="footer-nav-link button" id="email"><img class="email-img" src="css/images/email-icon.png" alt="email" style="max-width: 40px;"></a>
                             </div>
                             <div class="col-9">
+                                <!-- try this instead: <p><a href="mailto:info@premiumcoding.com>info@premiumcoding.com</a></p>-->
                                 <p>info@premiumcodingcom</p>
                             </div>
                         </div>
